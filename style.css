@@ -1,0 +1,179 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+
+    background: linear-gradient(135deg, #172f5f, #315fa8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* HEADER */
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 32px;
+    color: #172f5f;
+    margin-bottom: 12px;
+}
+
+.header p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+/* FORM */
+
+form {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+
+    width: 100%;
+    height: 170px;
+
+    padding: 15px;
+
+    border: 2px solid #d5d5d5;
+    border-radius: 12px;
+
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+
+    resize: vertical;
+
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #315fa8;
+}
+
+
+/* BUTTON */
+
+button {
+    display: block;
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: #172f5f;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #315fa8;
+}
+
+
+/* RESULT */
+
+.result {
+    width: 100%;
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    background: #f3f6fb;
+
+    text-align: center;
+}
+
+.result h2 {
+    font-size: 22px;
+    color: #333;
+
+    margin-bottom: 15px;
+}
+
+.prediction {
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #172f5f;
+
+    margin-bottom: 12px;
+}
+
+.probability {
+    font-size: 17px;
+    color: #555;
+}
+
+.probability strong {
+    color: #172f5f;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        padding: 25px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    textarea {
+        height: 140px;
+    }
+}
